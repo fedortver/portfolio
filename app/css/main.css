@@ -10,6 +10,121 @@ body {
 	 margin-bottom: 80px;
 }
 
+.main-container{
+	width:100%;
+}
+
+/*хедер*/
+.page-header{
+	background: #eff3f7;
+	
+}
+
+.header-container{
+	max-width: 1200px;
+	min-width: 960px;
+	margin: 0px auto;
+	height: 119px;
+	position: relative;
+}
+
+.gradient-line {
+	height: 3px;
+	opacity: 0.95;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6fa+0,1c667a+50,f2f6fa+100 */
+	background: #f2f6fa; /* Old browsers */
+	background: -moz-linear-gradient(left, #f2f6fa 0%, #1c667a 50%, #f2f6fa 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f6fa), color-stop(50%,#1c667a), color-stop(100%,#f2f6fa)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* IE10+ */
+	background: linear-gradient(to right, #f2f6fa 0%,#1c667a 50%,#f2f6fa 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6fa', endColorstr='#f2f6fa',GradientType=1 ); /* IE6-9 */
+}
+
+/*хедер конец*/
+
+/*логотип*/
+.logo-link{
+position: absolute;
+top: 40px;
+left: 0;
+}
+
+/*логотип конец*/
+
+/*социальные кнопки*/
+.social-buttons{
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	list-style-type: none;
+	width:260px;
+	margin:0;
+}
+
+.social{
+	float: left;
+	margin-left:20px;
+}
+
+.social:first-child{
+	margin-left: 0;
+}
+
+.social-link{
+	width:47px;
+	height:47px;
+	display: block;
+}
+
+.vk{
+	background: url(/img/social.png) -2px -3px no-repeat;
+}
+
+.vk:hover{
+	background: url(/img/social.png) -2px -65px no-repeat;
+}
+
+.twitter{
+	background:url(/img/social.png) -71px -3px no-repeat;
+}
+
+.twitter:hover{
+	background:url(/img/social.png) -71px -65px no-repeat;
+}
+
+.facebook{
+	background:url(/img/social.png) -140px -3px no-repeat;
+}
+
+.facebook:hover{
+	background:url(/img/social.png) -140px -65px no-repeat;
+}
+
+.github{
+	background:url(/img/social.png) -209px -3px no-repeat;
+}
+
+.github:hover{
+	background:url(/img/social.png) -209px -65px no-repeat;
+}
+/*социальные кнопки конец*/
+
+
+/*clearfix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/*clearfix конец*/
+
+/*футер*/
 .page-footer {
   position: absolute;
   bottom: 0;
@@ -18,3 +133,4 @@ body {
   height: 80px;
   background-color: #eff3f7;
 }
+/*футер конец*/
