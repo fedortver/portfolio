@@ -1,0 +1,20 @@
+html {
+	 position: relative;
+  min-height: 100%;	
+}
+body {
+	
+	background: url(../img/bg.png) repeat;
+	font: normal 15px 'fira_sanslight';
+	color: #4a545d;
+	 margin-bottom: 80px;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: #eff3f7;
+}
