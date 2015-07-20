@@ -1,22 +1,25 @@
 html {
 	 position: relative;
-  min-height: 100%;	
-}
+ 	 min-height: 100%;	
+	}
+
 body {
 	
 	background: url(../img/bg.png) repeat;
 	font: normal 15px 'fira_sanslight';
 	color: #4a545d;
-	 margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 
-.main-container{
+.wrapper{
 	width:100%;
+	position:relative;
 }
 
 /*хедер*/
 .page-header{
 	background: #eff3f7;
+	margin-bottom: 39px;
 	
 }
 
@@ -56,16 +59,17 @@ left: 0;
 /*социальные кнопки*/
 .social-buttons{
 	position: absolute;
-	top: 40px;
+	top: 37px;
 	right: 0px;
 	list-style-type: none;
 	width:260px;
 	margin:0;
+	padding:0;
 }
 
 .social{
 	float: left;
-	margin-left:20px;
+	margin-left:24px;
 }
 
 .social:first-child{
@@ -76,6 +80,7 @@ left: 0;
 	width:47px;
 	height:47px;
 	display: block;
+	text-indent: -9999px;
 }
 
 .vk{
@@ -111,6 +116,129 @@ left: 0;
 }
 /*социальные кнопки конец*/
 
+/*основной контейнер*/
+.main-container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+/*сайдбар*/
+
+.sidebar{
+	float:left;
+	width: 250px;
+}
+
+/*навигация*/
+.navigation{
+	background: #eff3f7;
+	border-radius:4px;
+	margin-bottom:23px;
+	overflow: hidden;
+}
+
+.nav-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item{
+	border-top:2px solid #3ba8c0; 
+	margin:0 10px;
+}
+
+.nav-item:first-child{
+border-top: none;
+}
+
+.nav-link{
+	color:#959aa8;
+	font-family: fira_sansbook;
+	font-size:21px;
+	text-decoration:none;
+	margin-left: 17px;
+	padding:20px 0;
+	display: block;
+}
+
+.nav-link:hover{
+color:#3ba8c0;
+}
+/*текущий пункт меню*/
+.nav-item.current{
+	background: #3ba8c0;	
+	margin:0;
+	margin-bottom:-2px;
+
+}
+
+.nav-item.current .nav-link{
+	color:#eff3f7;
+	font-size:23px;
+	padding:17px 0;
+	padding-left:11px;
+}
+/*навигация конец*/
+
+/*контакты*/
+.contacts{
+	font-family:  fira_sansbook;
+	color: #ffffff;
+	border-radius:4px;
+	margin-bottom:23px;
+}
+
+.contacts-list{
+	margin:0;
+	padding: 0;
+	font-size: 16px;
+
+}
+
+.contacts-header{
+	background: #3ba8c0;
+	border-radius: 4px 4px 0 0;
+	font-size: 21px;
+	padding:6px 0 0 19px;
+	
+}
+
+.contacts-header-text{
+	display: block;
+}
+
+.contacts-link{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+	font-size:16px;
+	padding:8px 0px;
+	margin-left:83px;
+}
+
+.contacts-item:last-child{
+	border-radius:0 0 4px 4px;
+}
+
+.contacts-link:hover{
+	text-decoration: underline;
+}
+
+.contacts-item.mail{
+	background: #41b9d4 url('/img/contacts-icons.png') 37px 11px no-repeat;	
+}
+
+.contacts-item.tel{
+	background: #48cbe8 url('/img/contacts-icons.png') 38px -45px no-repeat;
+}
+
+.contacts-item.skype{
+	background: #51daf8 url('/img/contacts-icons.png') 38px -100px no-repeat;
+}
+
+
+/*контакты конец*/
 
 /*clearfix*/
 .cf:before,
