@@ -6,15 +6,25 @@
     <meta name="keywords" content="Портфолио Товстухи Фёдора Николаевича">
 	<meta name="author" content="Товстуха Фёдор Николаевич">
 	<title>Обо мне</title>
+	<!-- favicon.ico -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	 <!-- fonts CSS -->
     <link rel="stylesheet" href="fonts/fira.css">
+     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <!-- normalize CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<!-- основные CSS -->
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/about-me.css">
+    <!-- modernizr -->
+    <script src="bower/modernizr/modernizr.js"></script>
 
 </head>
 <body>
+<!--[if lt IE 7]>
+		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
+		<![endif]-->
 	<div class="wrapper">
 	<!-- хеедр -->
 		<header class="page-header">
@@ -67,9 +77,54 @@
 			<!-- левый блок конец-->
 			<!-- правый блок -->
 			<div class="info-block">
-				<section class="aboutme"></section>
-				<section class="aboutme"></section>
-				<section class="aboutme"></section>
+				<section class="aboutme">
+					<h2 class="aboutme-title">Основная информация</h2>
+					<div class="aboutme-box cf">
+						<div class="my-foto-box">
+							<div class="my-foto">
+								<img src="img/foto.jpg" alt="me">
+							</div>
+						</div>
+						
+						<ul class="aboutme-info-block cf">
+							<li class="aboutme-info cf">
+								<div class="aboutme-info-title">Меня зовут:</div>
+								<div class="aboutme-info-text">Товстуха Фёдор Николаевич</div>
+							</li>
+							<li class="aboutme-info cf">
+								<div class="aboutme-info-title">Мой возраст:</div>
+								<div class="aboutme-info-text">27 лет</div>
+							</li>
+							<li class="aboutme-info cf">
+								<div class="aboutme-info-title">Мой город:</div>
+								<div class="aboutme-info-text">Тверь, Россия</div>
+							</li>
+							<li class="aboutme-info cf">
+								<div class="aboutme-info-title">Моя специализация:</div>
+								<div class="aboutme-info-text"><span class="upper">Frontend</span> разработчик</div>
+							</li>
+							<li class="aboutme-info cf">
+								<div class="aboutme-info-title">Ключевые навыки:</div>
+								<div class="aboutme-info-text">
+									<ul class="skills">
+										<li class="skill-item">html</li>
+										<li class="skill-item">css</li>
+										<li class="skill-item">javascript</li>
+										<li class="skill-item">php</li>
+										<li class="skill-item">gulp</li>
+										<li class="skill-item">git</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="aboutme">
+					<h2 class="aboutme-title">Опыт работы</h2>
+				</section>
+				<section class="aboutme">
+					<h2 class="aboutme-title">Образование</h2>
+				</section>
 			</div>
 			<!-- правый блок -->
 		</div>
