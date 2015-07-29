@@ -1,0 +1,93 @@
+.vertical-container{
+    display: table;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    padding-bottom: 81px;
+}
+
+.auth-wrapper{
+
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+	margin:0 auto;
+}
+
+.auth-form-container{
+	width: 590px;
+    height: 484px;
+    background: #eff3f7;
+    margin:0 auto;
+    box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.2);
+    border-radius:4px;
+}
+
+.auth-header{
+	background: #48cbe8;	
+	border-radius:5px 5px 0 0;
+	border-bottom:17px solid #67dffa;
+	padding:15px 0 13px 0;
+}
+
+.auth-title{
+	font-family:'fira_sansbook';
+	font-weight:normal;
+	font-size: 40px;
+	color:#fff;
+	margin:0;
+}
+
+.auth-label{	
+	font-size: 36px;
+	color:#959aa8;
+	display:block;
+	padding-top:15px;
+}
+
+.auth-input{
+	border:1px solid #48cbe8;
+	border-radius: 4px;
+	color:#48cbe8;
+	font-size: 17px;
+	padding:16px 226px 16px 18px;
+	text-align:left;
+	background: #fff;
+	outline: 0;
+}
+
+.auth-input::-webkit-input-placeholder{
+	color:#48cbe8;
+}
+
+.auth-input::-moz-input-placeholder{
+	color:#48cbe8;
+}
+
+.btn{
+	color:#fff;
+	font-family:'fira_sansbook';
+	font-size:36px;
+	font-weight:normal;
+	display: block;
+	margin:33px auto 0;
+	padding:0 62px;
+	background:#48cbe8;
+	border-radius:5px;
+	border-bottom:3px solid #3ba8c0;
+	border-top:0;
+	border-left:0;
+	border-right:0;
+	height:54px;
+	outline:0;
+}
+
+.btn:hover{
+	border-bottom:0;
+}
+
+.btn:active{
+	border-bottom:0;
+	border-top:3px solid #3ba8c0;
+
+}

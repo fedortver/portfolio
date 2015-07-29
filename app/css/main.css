@@ -1,6 +1,5 @@
 html {
-	 position: relative;
- 	 min-height: 100%;	
+ 	 height:100%;
 	}
 
 body {
@@ -8,13 +7,32 @@ body {
 	background: url(../img/bg.png) repeat;
 	font: normal 15px 'fira_sanslight';
 	color: #4a545d;
-	margin-bottom: 80px;
+	/*margin-bottom: 80px;*/
+	height:100%;
 }
 
+/* прибьём футер книзу*/
 .wrapper{
-	width:100%;
-	position:relative;
+	position: relative;
+	min-height: 100%;
+	min-width: 970px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+	height: auto!important;
+	/*overflow: hidden;*/
 }
+.wrapper:after {
+	content: "";
+	height: 81px;
+	display: block;
+}
+.page-footer{
+	min-width: 970px;
+	height: 81px;
+	margin-top: -81px;	
+	background-color: #eff3f7;
+	font-family: 'fira_sanslight';
+	color: #4a545d;
+}
+/* прибьём футер книзу - конец*/
 
 /*хедер*/
 .page-header{
@@ -63,7 +81,7 @@ left: 0;
 	top: 37px;
 	right: 0px;
 	list-style-type: none;
-	width:260px;
+	/*width:260px;*/
 	margin:0;
 	padding:0;
 }
@@ -260,17 +278,6 @@ color:#3ba8c0;
 /*clearfix конец*/
 
 /*футер*/
-.page-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 81px;
-  background-color: #eff3f7;
-  min-width: 970px;
-  font-family: 'fira_sanslight';
-  color: #4a545d;
-}
 
 .footer-content{
 	width: 960px;
