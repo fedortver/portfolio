@@ -264,6 +264,11 @@ color:#3ba8c0;
 	width:650px;
 }
 
+.aboutme{	
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom:25px; 
+}
 
 /*clearfix*/
 .cf:before,
@@ -276,6 +281,17 @@ color:#3ba8c0;
     clear: both;
 }
 /*clearfix конец*/
+
+
+/*float*/
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+/*float конец*/
 
 /*футер*/
 

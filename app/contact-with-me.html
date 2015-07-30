@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<!-- основные CSS -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/about-me.css">
+	<link rel="stylesheet" href="css/contact-with-me.css">
     <!-- modernizr -->
     <script src="bower/modernizer/modernizr.js"></script>
 
@@ -50,9 +50,9 @@
 			<aside class="sidebar">
 				<nav class="navigation">
 					<ul class="nav-list">
-						<li class="nav-item current"><a class="nav-link" href="/index.html">Обо мне</a></li>
+						<li class="nav-item"><a class="nav-link" href="/index.html">Обо мне</a></li>
 						<li class="nav-item"><a class="nav-link" href="/my-works.html">Мои работы</a></li>
-						<li class="nav-item"><a class="nav-link" href="/contact-with-me.html">Связаться со мной</a></li>
+						<li class="nav-item current"><a class="nav-link" href="/contact-with-me.html">Связаться со мной</a></li>
 					</ul>
 				</nav>
 				<div class="contacts">					
@@ -79,75 +79,35 @@
 			<!-- правый блок -->
 			<div class="info-block">
 				<section class="aboutme">
-					<h2 class="aboutme-title">Основная информация</h2>
-					<div class="aboutme-box cf">
-						<div class="my-foto-box">
-							<div class="my-foto">
-								<img src="img/foto.jpg" alt="me">
-							</div>
-						</div>
-						
-						<ul class="aboutme-info-block cf">
-							<li class="aboutme-info cf">
-								<div class="aboutme-info-title">Меня зовут:</div>
-								<div class="aboutme-info-text">Товстуха Фёдор Николаевич</div>
-							</li>
-							<li class="aboutme-info cf">
-								<div class="aboutme-info-title">Мой возраст:</div>
-								<div class="aboutme-info-text">27 лет</div>
-							</li>
-							<li class="aboutme-info cf">
-								<div class="aboutme-info-title">Мой город:</div>
-								<div class="aboutme-info-text">Тверь, Россия</div>
-							</li>
-							<li class="aboutme-info cf">
-								<div class="aboutme-info-title">Моя специализация:</div>
-								<div class="aboutme-info-text"><span class="upper">Frontend</span> разработчик</div>
-							</li>
-							<li class="aboutme-info cf">
-								<div class="aboutme-info-title">Ключевые навыки:</div>
-								<div class="aboutme-info-text">
-									<ul class="skills">
-										<li class="skill-item">html</li>
-										<li class="skill-item">css</li>
-										<li class="skill-item">javascript</li>
-										<li class="skill-item">php</li>
-										<li class="skill-item">gulp</li>
-										<li class="skill-item">git</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
+					<div class="contact-with-me-header">
+						<h2 class="contact-with-me-title">У вас интересный проект? Напишите мне</h2>
 					</div>
-				</section>
-				<section class="aboutme">
-					<h2 class="aboutme-title">Опыт работы</h2>
-						<div class="aboutme-box cf">					
-							<ul class="aboutme-list">
-								<li class="aboutme-list-item work-icon">
-									<div class="where">"ООО СНС" - Торговый представитель</div>
-	                    			<div class="period">Август 2012 - Март 2013</div>
-								</li>
-								<li class="aboutme-list-item work-icon">
-									<div class="where">"ООО Визард-С" - Инженер-программист</div>
-	                    			<div class="period">Апрель 2013 - по настоящее время</div>
-								</li>
-							</ul>	
-						</div>					
-				</section>
-				<section class="aboutme">
-					<h2 class="aboutme-title">Образование</h2>
-					<div class="aboutme-box cf">	
-						<ul class="aboutme-list">
-							<li class="aboutme-list-item education-icon">
-								 <div class="where">Высшее. ТГТУ</div>
-                   				 <div class="period">Сентябрь 2005 - Июль 2010</div>
-							</li>
-							<li class="aboutme-list-item course-icon">
-								 <div class="where">Курсы Loftschool.ru</div>
-                  				 <div class="period">Июль 2015 - по настоящее время</div>
-							</li>
-						</ul>
+					<div class="contact-form-body">
+						<form name="contact-form" class="contact-form">
+							<div class="cf">
+								<div class="form-element fl">
+									<label for="name" class="contact-label">Имя</label>
+									<input type="text" name="name" class="contact-input" placeholder="Как к вам обращаться?">
+								</div>
+								<div class="form-element fr">
+									<label for="email" class="contact-label">Email</label>
+									<input type="text" name="email" class="contact-input" placeholder="Куда мне писать">
+								</div>
+							</div>
+							<div class="form-element">
+								<label for="message" class="contact-label">Сообщение</label>
+	                            <textarea name="message" id="message" class="contact-textarea" rows="3" placeholder="Кратко в чем суть"></textarea>
+                            </div>
+                            <div class="form-element cf">
+                            	<label for="captcha" class="contact-label captcha-label">Введите код, указанный на картинке</label>
+                                <img src="img/captcha.png" alt="captcha" class="contact-captcha fl"/>
+                                <input type="text" name="captcha" class="contact-input-captcha fr" placeholder="Введите код" >
+                            </div> 
+                            <div class="buttons cf">
+                            	<button type="submit" class="btn fl">Отправить</button>
+                                <button type="reset" class="btn btn-reset fr">Очистить</button>
+                            </div>   
+						</form>
 					</div>
 				</section>
 			</div>

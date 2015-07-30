@@ -1,10 +1,4 @@
 /*классы секций правого блока*/
-.aboutme{	
-	background: #eff3f7;
-	border-radius: 4px;
-	margin-bottom:25px; 
-}
-
 .aboutme-title{
 	font-family: 'fira_sansbook';
 	font-size:27px;
