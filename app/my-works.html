@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Портфолио Товстухи Фёдора Николаевича">
+    <meta name="keywords" content="Портфолио Товстухи Фёдора Николаевича">
+	<meta name="author" content="Товстуха Фёдор Николаевич">
+	<title>Мои работы</title>
+	<!-- favicon.ico -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+	 <!-- fonts CSS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+     <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- normalize CSS -->
+	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	<!-- основные CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/my-works.css">
+    <!-- modernizr -->
+    <script src="bower/modernizer/modernizr.js"></script>
+
+</head>
+<body>
+<!--[if lt IE 7]>
+		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
+		<![endif]-->
+	<div class="wrapper">
+	<!-- хеедр -->
+		<header class="page-header">
+			<div class="header-container">				
+					<a href="/" class="logo-link">
+						<img src="img/logo.png" alt="logo">
+					</a>	
+					<ul class="social-buttons">
+						<li class="social"><a class="social-link vk target="_blank"" href="/">Вконтакте</a></li>
+						<li class="social"><a class="social-link twitter" target="_blank" href="">Twitter</a></li>
+						<li class="social"><a class="social-link facebook" target="_blank" href="">Facebook</a></li>
+						<li class="social"><a class="social-link github" target="_blank" href="">Github</a></li>
+					</ul>			
+					
+			</div>
+			<div class="gradient-line"></div>
+		</header>
+	<!-- хедер конец -->
+		<!-- основной контент -->
+		<div class="main-container cf">
+			<!-- левый блок -->
+			<aside class="sidebar">
+				<nav class="navigation">
+					<ul class="nav-list">
+						<li class="nav-item"><a class="nav-link" href="/index.html">Обо мне</a></li>
+						<li class="nav-item current"><a class="nav-link" href="/my-works.html">Мои работы</a></li>
+						<li class="nav-item"><a class="nav-link" href="/contact-with-me.html">Связаться со мной</a></li>
+					</ul>
+				</nav>
+				<div class="contacts">					
+					<div class="contacts-header">
+						<span class="contacts-header-text">Контакты</span>
+					</div>
+					<ul class="contacts-list">
+						<li class="contacts-item mail">							
+							 <a class="contacts-link" href="mailto:fedortver@mail.ru">fedortver@mail.ru</a>
+                              
+						</li>
+						<li class="contacts-item tel">
+							
+							 <a class="contacts-link" href="tel:+79201545278">+79201545278</a>   	                           
+						</li>
+						<li class="contacts-item skype">
+							
+							<a class="contacts-link" href="skype:fedortver">fedortver</a>                                 
+						</li>
+					</ul>
+				</div>	
+			</aside>
+			<!-- левый блок конец-->
+			<!-- правый блок -->
+			<div class="info-block">
+				<section class="aboutme">
+					<h2 class="aboutme-title">Мои работы</h2>
+					<div class="works-wrapper">
+						<ul class="works-list">
+							<li class="work-item">
+								<div class="img-wrapper bg-img-1">							
+									<div class="work-info">
+										<a href="/" target="_blank" class="work-link-info">www.site.ru</a>
+									</div>
+								</div>
+								<a href="/" target="_blank" class="work-link">www.site.ru</a>
+								<div class="work-desc">Информация о проекте 1 превью 2 строки....</div>
+							</li>
+							<li class="work-item">
+								<div class="img-wrapper bg-img-2">
+									<div class="work-info">
+										<a href="/" target="_blank" class="work-link-info">www.site.ru</a>
+									</div>
+								</div>
+								<a href="/" target="_blank" class="work-link">www.site.ru</a>
+								<div class="work-desc">Информация о проекте 2 превью 2 строки....</div>
+							</li>
+							<li class="work-item">
+								<div class="img-wrapper bg-img-3">
+									<div class="work-info">
+										<a href="/" target="_blank" class="work-link-info">www.site.ru</a>
+									</div>
+								</div>
+								<a href="/" target="_blank" class="work-link">www.site.ru</a>
+								<div class="work-desc">Информация о проекте 3 превью 2 строки....</div>
+							</li>
+							<li class="work-item">
+								<div class="img-wrapper bg-img-4">
+									<div class="work-info">
+										<a href="/" target="_blank" class="work-link-info">www.site.ru</a>
+									</div>
+								</div>
+								<a href="/" target="_blank" class="work-link">www.site.ru</a>
+								<div class="work-desc">Информация о проекте 4 превью 2 строки....</div>
+							</li>
+							<li class="work-item add-new-work">
+								<a href="#" id="add-new-work" class="add-new-work-link">
+			                        <div class="add-new-work-text">Добавить проект</div>
+			                    </a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<div id="popup-container">
+					<div class="popup-wrapper">
+					    <div class="popup-header">
+					        <h2 class="popup-title">Добавление проекта</h2>
+					        <button type="button" class="b-close"></button>
+					    </div>
+					    <div class="popup-body">
+					        <form name="add-work" class="add-work">
+					        	<div class="form-part">
+						            <label for="work-name" class="popup-label">Название проекта</label>
+						            <input name="work-name"  id="work-name" type="text" placeholder="Введите название" class="popup-input">
+						        </div>
+						        <div class="form-part">
+									<label class="popup-label">Картинка проекта</label>
+									<div class="work-file-wrapper">
+										<input type="text" class="popup-input" name="filename" disabled placeholder="Загрузите изображение">					
+										<label for="upload-file-input" class="upload-label"></label>
+										<input type="file" name="upload-file" id="upload-file-input" class="upload-hidden-input">						
+									</div>
+								</div>
+								<div class="form-part">
+						            <label for="work-url" class="popup-label">URL проекта</label>
+						            <input name="work-url" id="work-url" type="text" placeholder="Добавьте ссылку" class="popup-input">
+					            </div>
+					            <div class="form-part">
+						            <label for="work-desc" class="popup-label">Описание</label>
+						            <textarea name="work-desc" id="work-desc"  rows="3" placeholder="Пара слов о вашем проекте" class="popup-textarea"></textarea>
+					            </div>
+					            <div class="btn-wrapper">
+					            	<button type="submit" class="btn">Добавить</button>
+					            </div>
+					        </form>
+					    </div>
+					</div>
+				</div>
+			</div>
+
+			<!-- правый блок -->
+		</div>
+		<!-- основной конец -->
+	</div>
+	<footer class="page-footer">
+		<div class="gradient-line"></div>
+		<div class="footer-content">
+			<div class="lock">
+				<a class="lock-href" href="/auth.html">Войти</a>
+			</div>
+			<div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+		</div>
+	</footer>
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/bpopup/jquery.bpopup.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/add-work.js"></script>
+
+
+</body>
+</html>

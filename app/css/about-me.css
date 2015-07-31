@@ -1,16 +1,4 @@
 /*классы секций правого блока*/
-.aboutme-title{
-	font-family: 'fira_sansbook';
-	font-size:27px;
-	color:#3ba8c0;
-	font-weight: normal;
-	border-bottom: 2px solid #3ba8c0;
-	display: inline-block;
-	margin:0;
-	margin-bottom:19px;
-	padding:12px 23px;
-}
-
 .aboutme-box{
 	padding-bottom: 43px;
 }
