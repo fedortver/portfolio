@@ -44,6 +44,10 @@
 	outline: 0;
 }
 
+.contact-input{
+	width:135px;
+}
+
 .contact-input::-webkit-input-placeholder, .contact-textarea::-webkit-input-placeholder,
 .contact-input-captcha::-webkit-input-placeholder{
 	color:#48cbe8;

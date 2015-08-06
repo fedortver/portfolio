@@ -15,6 +15,8 @@
      <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <!-- normalize CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	 <!--qtip-->
+    <link rel="stylesheet" href="bower/qTip2/jquery.qtip.css">
 	<!-- основные CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contact-with-me.css">
@@ -83,25 +85,25 @@
 						<h2 class="contact-with-me-title">У вас интересный проект? Напишите мне</h2>
 					</div>
 					<div class="contact-form-body">
-						<form name="contact-form" class="contact-form">
+						<form name="contact-form" class="contact-form" id="contact-form">
 							<div class="cf">
 								<div class="form-element fl">
 									<label for="name" class="contact-label">Имя</label>
-									<input type="text" name="name" id="name" class="contact-input" placeholder="Как к вам обращаться?">
+									<input type="text" name="name" id="name" class="contact-input" qtip-content="Вы не ввели имя" placeholder="Как к вам обращаться?">
 								</div>
 								<div class="form-element fr">
 									<label for="email" class="contact-label">Email</label>
-									<input type="text" name="email" id="email" class="contact-input" placeholder="Куда мне писать">
+									<input type="text" name="email" id="email" class="contact-input" qtip-content="Вы не ввели email" qtip-position="right" placeholder="Куда мне писать">
 								</div>
 							</div>
 							<div class="form-element">
 								<label for="message" class="contact-label">Сообщение</label>
-	                            <textarea name="message" id="message" class="contact-textarea" rows="3" placeholder="Кратко в чем суть"></textarea>
+	                            <textarea name="message" id="message" class="contact-textarea" rows="3" qtip-content="Ваш вопрос" placeholder="Кратко в чем суть"></textarea>
                             </div>
                             <div class="form-element cf">
                             	<label for="captcha" class="contact-label captcha-label">Введите код, указанный на картинке</label>
                                 <img src="img/captcha.png" alt="captcha" class="contact-captcha fl"/>
-                                <input type="text" name="captcha" id="captcha" class="contact-input-captcha fr" placeholder="Введите код" >
+                                <input type="text" name="captcha" id="captcha" class="contact-input-captcha fr" qtip-content="Ваш вопрос" qtip-content="Вы не ввели код" qtip-position="right" placeholder="Введите код" >
                             </div> 
                             <div class="buttons cf">
                             	<button type="submit" class="btn fl">Отправить</button>
@@ -126,6 +128,9 @@
 	</footer>
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="js/main.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="js/contact-with-me.js"></script>
 
 
 </body>

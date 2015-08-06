@@ -15,11 +15,14 @@
      <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
     <!-- normalize CSS -->
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	 <!--qtip-->
+    <link rel="stylesheet" href="bower/qTip2/jquery.qtip.css">
 	<!-- основные CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/my-works.css">
     <!-- modernizr -->
     <script src="bower/modernizer/modernizr.js"></script>
+   
 
 </head>
 <body>
@@ -133,26 +136,29 @@
 					        <button type="button" class="b-close"></button>
 					    </div>
 					    <div class="popup-body">
-					        <form name="add-work" class="add-work">
+					        <form name="add-work" class="add-work" id="add-work">
 					        	<div class="form-part">
 						            <label for="work-name" class="popup-label">Название проекта</label>
-						            <input name="work-name"  id="work-name" type="text" placeholder="Введите название" class="popup-input">
+						            <input name="work-name"  id="work-name" type="text" placeholder="Введите название" qtip-content="введите название" class="popup-input">
 						        </div>
-						        <div class="form-part">
+						        <div class="form-part">	
 									<label class="popup-label">Картинка проекта</label>
-									<div class="work-file-wrapper">
-										<input type="text" class="popup-input" name="filename" disabled placeholder="Загрузите изображение">					
-										<label for="upload-file-input" class="upload-label"></label>
-										<input type="file" name="upload-file" id="upload-file-input" class="upload-hidden-input">						
-									</div>
+									<div class="file-load-block">
+										<input type="file" value="" id="file" class="file-input" />
+										<div class="fileLoad">
+											<label for="upload-file-input" class="upload-label"></label>
+										<input class="popup-input upload-input-text" name="filename"  qtip-content="изображение" disabled placeholder="изображение" />
+										</div>
+									</div>							
+
 								</div>
 								<div class="form-part">
 						            <label for="work-url" class="popup-label">URL проекта</label>
-						            <input name="work-url" id="work-url" type="text" placeholder="Добавьте ссылку" class="popup-input">
+						            <input name="work-url" id="work-url" type="text" placeholder="Добавьте ссылку" qtip-content="ссылка на проект" class="popup-input">
 					            </div>
 					            <div class="form-part">
 						            <label for="work-desc" class="popup-label">Описание</label>
-						            <textarea name="work-desc" id="work-desc"  rows="3" placeholder="Пара слов о вашем проекте" class="popup-textarea"></textarea>
+						            <textarea name="work-desc" id="work-desc"  rows="3" placeholder="Пара слов о вашем проекте" qtip-content="описание проекта" class="popup-textarea"></textarea>
 					            </div>
 					            <div class="btn-wrapper">
 					            	<button type="submit" class="btn">Добавить</button>
@@ -179,8 +185,21 @@
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/bpopup/jquery.bpopup.min.js"></script>
 <script src="js/main.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 <script src="js/add-work.js"></script>
-
-
+<script src="js/tooltip.js"></script>
+<script>
+// отслеживаем изменение инпута file
+$('#file').change(function(){
+var fileResult = $(this).val();
+$(this).closest('.file-load-block').find('.fileLoad').find('input').val(fileResult);
+});
+/* Добавляем новый класс кнопке если инпут файл получил фокус */
+$('#file').hover(function(){
+$(this).parent().find('button').addClass('button-hover');
+}, function(){
+$(this).parent().find('button').removeClass('button-hover');
+});
+</script>
 </body>
 </html>
