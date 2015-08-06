@@ -40,7 +40,7 @@ var myModule = (function () {
 	//вставка имени файла
 	var _changeInputFile = function(){
 		var fileResult = $(this).val();
-		$(this).closest('.file-load-block').find('.fileLoad').find('input').val(fileResult);
+		$(this).closest('.file-load-block').find('.fileLoad').find('input').val(fileResult).trigger('hideTooltip').removeClass('has-error');
 	}
 
 	// Возвращаем объект (публичные методы) 

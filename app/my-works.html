@@ -185,21 +185,8 @@
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/bpopup/jquery.bpopup.min.js"></script>
 <script src="js/main.js"></script>
-<script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="bower/qTip2/jquery.qtip.js"></script>
 <script src="js/add-work.js"></script>
 <script src="js/tooltip.js"></script>
-<script>
-// отслеживаем изменение инпута file
-$('#file').change(function(){
-var fileResult = $(this).val();
-$(this).closest('.file-load-block').find('.fileLoad').find('input').val(fileResult);
-});
-/* Добавляем новый класс кнопке если инпут файл получил фокус */
-$('#file').hover(function(){
-$(this).parent().find('button').addClass('button-hover');
-}, function(){
-$(this).parent().find('button').removeClass('button-hover');
-});
-</script>
 </body>
 </html>
