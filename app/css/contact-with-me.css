@@ -45,7 +45,7 @@
 }
 
 .contact-input{
-	width:135px;
+	width:170px;
 }
 
 .contact-input::-webkit-input-placeholder, .contact-textarea::-webkit-input-placeholder,
@@ -58,7 +58,7 @@
 }
 
 .contact-input{
-	padding: 8px 46px 8px 10px;
+	padding: 8px 10px 8px 10px;
 }
 
 .contact-textarea{
@@ -75,7 +75,7 @@
 
 .contact-input-captcha{
 	margin-top:20px;
-	padding:4px 47px 4px 8px;
+	padding:4px 8px 4px 8px;
 }
 
 .buttons{

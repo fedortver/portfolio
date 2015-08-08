@@ -39,8 +39,9 @@ var myModule = (function () {
 
 	//вставка имени файла
 	var _changeInputFile = function(){
-		var fileResult = $(this).val();
-		$(this).closest('.file-load-block').find('.fileLoad').find('input').val(fileResult).trigger('hideTooltip').removeClass('has-error');
+		var input = $(this).val(); // инпут type="file"		
+			var name = /([^\\]+)$/.exec(input);
+		$(this).closest('.file-load-block').find('.fileLoad').find('input').val(name[0]).trigger('hideTooltip').removeClass('has-error');
 	}
 
 	// Возвращаем объект (публичные методы) 

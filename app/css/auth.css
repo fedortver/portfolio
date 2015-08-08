@@ -50,10 +50,11 @@
 	border-radius: 4px;
 	color:#48cbe8;
 	font-size: 17px;
-	padding:16px 226px 16px 18px;
+	padding:16px 18px;
 	text-align:left;
 	background: #fff;
 	outline: 0;
+	width:386px;
 }
 
 .auth-input::-webkit-input-placeholder{

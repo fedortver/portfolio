@@ -78,6 +78,15 @@
 	-webkit-backface-visibility: hidden;
 }
 
+.no-opacity .work-info{
+	display:none;
+}
+
+.no-opacity .img-wrapper:hover .work-info{
+	display:inline-block;
+}
+
+
 .work-link-info {
 	font-family: 'fira_sansbook';
 	font-size: 12px;
@@ -88,13 +97,16 @@
 	padding: 0 5px;
 	margin-top:55px;
 	display: inline-block;
-	opacity: 0;
-	
+	opacity: 0;	
 	-webkit-transition: all 1s ease-in-out 0.4s;
 	-moz-transition: all 1s ease-in-out 0.4s;
 	-o-transition: all 1s ease-in-out 0.4s;
 	-ms-transition: all 1s ease-in-out 0.4s;
 	transition: all 1s ease-in-out 0.4s;
+}
+
+.no-opacity .work-link-info{
+	display:none;
 }
 
 .img-wrapper:hover .work-info {
@@ -105,6 +117,10 @@
 	transform: scale(1);
 	opacity: 0.8;
 	
+}
+
+.no-opacity .img-wrapper:hover .work-link-info {
+	display:inline-block;
 }
 
 .img-wrapper:hover .work-link-info {
@@ -211,7 +227,7 @@
     outline: none;
     font-size: 13px;
     width: 100%;
-    padding: 0px 9px;
+    padding: 10px 9px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -284,6 +300,7 @@
 	z-index: 2;
 	cursor: pointer;
 	width: 100%;
+	height:100%;
 }
 
 .upload-input-text{
